@@ -1,0 +1,7 @@
+{% extends 'mainapp/base.html' %}
+{% block title %}{{ article.title }} - AnarchyPedia{% endblock %}
+{% block content %}
+    <h1>Editing {{ article.formatted_title }}</h1>
+    <h3>Last Edited at </h3>{{ article.last_edited }} by {{ article.last_edited_by }}
+{{ article.article_html | safe}}
+{% endblock %}
