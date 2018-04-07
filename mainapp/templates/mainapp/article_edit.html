@@ -2,6 +2,11 @@
 {% block title %}{{ article.title }} - AnarchyPedia{% endblock %}
 {% block content %}
     <h1>Editing {{ article.formatted_title }}</h1>
-    <h3>Last Edited at </h3>{{ article.last_edited }} by {{ article.last_edited_by }}
-{{ article.article_html | safe}}
+    Last Edited at {{ article.last_edited }} by {{ article.last_edited_by }}
+    <br>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" value="Submit" class="btn btn-primary">Submit Edits</button>
+    </form>
 {% endblock %}

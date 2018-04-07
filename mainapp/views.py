@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse, HttpResponseRedirect
 from . import WikiAPI
 from .models import Article
+from .forms import ArticleEditForm
 
 
 def index(request):
@@ -22,4 +23,15 @@ def get_article(request, title):
 
 def edit_article(request, title):
     wiki_article = get_object_or_404(Article, title=title)
-    return render(request, 'mainapp/article_edit.html', {'article': wiki_article})
+    if request.method == 'POST':
+        form = ArticleEditForm(request.POST)
+        if form.is_valid():
+            new_html = form.cleaned_data.get('new_markup')
+            new_last_edited_by = form.cleaned_data.get('pseudonym')
+            wiki_article.article_html = new_html
+            wiki_article.last_edited_by = new_last_edited_by
+            wiki_article.save()
+            return HttpResponseRedirect(reverse(get_article, args=[title]))
+    else:
+        form = ArticleEditForm(initial={'new_markup': wiki_article.article_html})
+    return render(request, 'mainapp/article_edit.html', {'article': wiki_article, 'form': form})
