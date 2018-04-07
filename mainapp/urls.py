@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     re_path(r'^$', views.index, name="index"),
-    path('wiki/<title>', views.get_article),
-    path('wiki/<title>/edit', views.edit_article)
+    path('wiki/<title>', views.get_article, name="viewarticle"),
+    path('wiki/<title>/edit', views.edit_article, name="edit")
 ]

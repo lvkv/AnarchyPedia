@@ -1,11 +1,18 @@
 from django.shortcuts import render, get_object_or_404, reverse, HttpResponseRedirect
 from . import WikiAPI
 from .models import Article
-from .forms import ArticleEditForm
+from .forms import ArticleEditForm, ArticleSearchForm
 
 
 def index(request):
-    return render(request, 'mainapp/index.html', {})
+    if request.method == 'POST':
+        form = ArticleSearchForm(request.POST)
+        if form.is_valid():
+            article_title = form.cleaned_data.get('search_title')
+            return HttpResponseRedirect(reverse(get_article, args=[article_title]))
+    else:
+        form = ArticleSearchForm()
+    return render(request, 'mainapp/index.html', {'form': form})
 
 
 def get_article(request, title):

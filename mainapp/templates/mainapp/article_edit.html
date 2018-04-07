@@ -2,7 +2,7 @@
 {% block title %}{{ article.title }} - AnarchyPedia{% endblock %}
 {% block content %}
     <h1>Editing {{ article.formatted_title }}</h1>
-    Last Edited at {{ article.last_edited }} by {{ article.last_edited_by }}
+    Last Edited at {{ article.last_edited }} by {{ article.last_edited_by }}<br>
     <br>
     <form method="POST">
         {% csrf_token %}

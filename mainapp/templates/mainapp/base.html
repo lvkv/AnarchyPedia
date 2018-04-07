@@ -2,40 +2,303 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% load static %}
+
     <title>{% block title %}Oh la la{% endblock %}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
+    <script>document.documentElement.className = document.documentElement.className.replace(/(^|\s)client-nojs(\s|$)/, "$1client-js$2");</script>
+    <script>(window.RLQ = window.RLQ || []).push(function () {
+        mw.config.set({
+            "wgCanonicalNamespace": "",
+            "wgCanonicalSpecialPageName": false,
+            "wgNamespaceNumber": 0,
+            "wgPageName": "Colin_Cherry",
+            "wgTitle": "Colin Cherry",
+            "wgCurRevisionId": 806514065,
+            "wgRevisionId": 806514065,
+            "wgArticleId": 2939832,
+            "wgIsArticle": true,
+            "wgIsRedirect": false,
+            "wgAction": "view",
+            "wgUserName": null,
+            "wgUserGroups": ["*"],
+            "wgCategories": ["Articles with hCards", "Wikipedia articles with VIAF identifiers", "Wikipedia articles with LCCN identifiers", "Wikipedia articles with ISNI identifiers", "Wikipedia articles with GND identifiers", "All stub articles", "British scientists", "Cognitive scientists", "Communication theorists", "People educated at St Albans School, Hertfordshire", "1914 births", "1979 deaths", "Academics of Imperial College London", "People from St Albans", "British scientist stubs"],
+            "wgBreakFrames": false,
+            "wgPageContentLanguage": "en",
+            "wgPageContentModel": "wikitext",
+            "wgSeparatorTransformTable": ["", ""],
+            "wgDigitTransformTable": ["", ""],
+            "wgDefaultDateFormat": "dmy",
+            "wgMonthNames": ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            "wgMonthNamesShort": ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            "wgRelevantPageName": "Colin_Cherry",
+            "wgRelevantArticleId": 2939832,
+            "wgRequestId": "WsZBQgpAICEAAHPNVB8AAACJ",
+            "wgIsProbablyEditable": true,
+            "wgRelevantPageIsProbablyEditable": true,
+            "wgRestrictionEdit": [],
+            "wgRestrictionMove": [],
+            "wgFlaggedRevsParams": {"tags": {}},
+            "wgStableRevisionId": null,
+            "wgWikiEditorEnabledModules": [],
+            "wgBetaFeaturesFeatures": [],
+            "wgMediaViewerOnClick": true,
+            "wgMediaViewerEnabledByDefault": true,
+            "wgPopupsShouldSendModuleToUser": true,
+            "wgPopupsConflictsWithNavPopupGadget": false,
+            "wgVisualEditor": {
+                "pageLanguageCode": "en",
+                "pageLanguageDir": "ltr",
+                "pageVariantFallbacks": "en",
+                "usePageImages": true,
+                "usePageDescriptions": true
+            },
+            "wgPreferredVariant": "en",
+            "wgMFExpandAllSectionsUserOption": true,
+            "wgMFEnableFontChanger": true,
+            "wgMFDisplayWikibaseDescriptions": {"search": true, "nearby": true, "watchlist": true, "tagline": false},
+            "wgRelatedArticles": null,
+            "wgRelatedArticlesUseCirrusSearch": true,
+            "wgRelatedArticlesOnlyUseCirrusSearch": false,
+            "wgULSCurrentAutonym": "English",
+            "wgNoticeProject": "wikipedia",
+            "wgCentralNoticeCookiesToDelete": [],
+            "wgCentralNoticeCategoriesUsingLegacy": ["Fundraising", "fundraising"],
+            "wgCategoryTreePageCategoryOptions": "{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}",
+            "wgWikibaseItemId": "Q5144983",
+            "wgScoreNoteLanguages": {
+                "arabic": "العربية",
+                "catalan": "català",
+                "deutsch": "Deutsch",
+                "english": "English",
+                "espanol": "español",
+                "italiano": "italiano",
+                "nederlands": "Nederlands",
+                "norsk": "norsk",
+                "portugues": "português",
+                "suomi": "suomi",
+                "svenska": "svenska",
+                "vlaams": "West-Vlams"
+            },
+            "wgScoreDefaultNoteLanguage": "nederlands",
+            "wgCentralAuthMobileDomain": false,
+            "wgCodeMirrorEnabled": false,
+            "wgVisualEditorToolbarScrollOffset": 0,
+            "wgVisualEditorUnsupportedEditParams": ["undo", "undoafter", "veswitched"],
+            "wgEditSubmitButtonLabelPublish": true
+        });
+        mw.loader.state({
+            "ext.gadget.charinsert-styles": "ready",
+            "ext.globalCssJs.user.styles": "ready",
+            "ext.globalCssJs.site.styles": "ready",
+            "site.styles": "ready",
+            "noscript": "ready",
+            "user.styles": "ready",
+            "user": "ready",
+            "user.options": "ready",
+            "user.tokens": "loading",
+            "ext.cite.styles": "ready",
+            "wikibase.client.init": "ready",
+            "ext.visualEditor.desktopArticleTarget.noscript": "ready",
+            "ext.uls.interlanguage": "ready",
+            "ext.wikimediaBadges": "ready",
+            "mediawiki.legacy.shared": "ready",
+            "mediawiki.legacy.commonPrint": "ready",
+            "mediawiki.sectionAnchor": "ready",
+            "mediawiki.skinning.interface": "ready",
+            "skins.vector.styles": "ready",
+            "ext.globalCssJs.user": "ready",
+            "ext.globalCssJs.site": "ready"
+        });
+        mw.loader.implement("user.tokens@1dqfd7l", function ($, jQuery, require, module) {/*@nomin*/
+            mw.user.tokens.set({"editToken": "+\\", "patrolToken": "+\\", "watchToken": "+\\", "csrfToken": "+\\"});
+        });
+        mw.loader.load(["ext.cite.a11y", "site", "mediawiki.page.startup", "mediawiki.user", "mediawiki.hidpi", "mediawiki.page.ready", "mediawiki.searchSuggest", "ext.gadget.teahouse", "ext.gadget.ReferenceTooltips", "ext.gadget.watchlist-notice", "ext.gadget.DRN-wizard", "ext.gadget.charinsert", "ext.gadget.refToolbar", "ext.gadget.extra-toolbar-buttons", "ext.gadget.switcher", "ext.centralauth.centralautologin", "mmv.head", "mmv.bootstrap.autostart", "ext.popups", "ext.visualEditor.desktopArticleTarget.init", "ext.visualEditor.targetLoader", "ext.eventLogging.subscriber", "ext.wikimediaEvents", "ext.navigationTiming", "ext.uls.eventlogger", "ext.uls.init", "ext.uls.compactlinks", "ext.uls.interface", "ext.3d", "ext.centralNotice.geoIP", "ext.centralNotice.startUp", "skins.vector.js"]);
+    });</script>
+    <meta name="ResourceLoaderDynamicStyles" content="">
+    <script src="https://en.wikipedia.org/w/load.php?debug=false&lang=en&modules=jquery%2Cmediawiki%7Cmediawiki.legacy.wikibits&only=scripts&skin=vector&version=1nv7gwr:formatted"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'mainapp/style.css' %}"/>
 </head>
-<body>
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="{% url 'index' %}">anarp</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-
-        </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="{% url 'index' %}">Web<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'index' %}">Mobile<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'index' %}">Desktop<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'index' %}">Contact<span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Colin_Cherry rootpage-Colin_Cherry skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+    {% block content %}
+    {% endblock %}
+</div>
+<div id="mw-navigation">
+    <h2>Navigation menu</h2>
+    <div id="mw-head">
+        <div id="left-navigation">
+            <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+                <h3 id="p-namespaces-label">Namespaces</h3>
+                <ul>
+                    <li id="ca-nstab-main" class="selected"><span><a href=""
+                                                                     title="View the content page [alt-shift-c]"
+                                                                     accesskey="c">Article</a></span></li>
+                </ul>
+            </div>
+            <div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+                <input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label">
+                <h3 id="p-variants-label">
+                    <span>Variants</span>
+                </h3>
+                <div class="menu">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="right-navigation">
+            <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+                <h3 id="p-views-label">Views</h3>
+                <ul>
+                    <li id="ca-view" class="collapsible selected"><span><a href="{% url 'viewarticle' title=article.title %}">Read</a></span>
+                    </li>
+                    <li id="ca-edit" class="collapsible"><span><a href="{% url 'edit' title=article.title %}"
+                                                                  title="Edit this page [alt-shift-e]" accesskey="e">Edit</a></span>
+                    </li>
+                    <li id="ca-history" class="collapsible"><span><a
+                            href=""
+                            title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+                </ul>
+            </div>
+            <div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label"
+                 style="">
+                <input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label">
+                <h3 id="p-cactions-label"><span>More</span></h3>
+                <div class="menu">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</nav>
-{% block content %}
-{% endblock %}
+    <div id="mw-panel">
+        <div id="p-logo" role="banner"><a class="mw-wiki-logo" href="{% url 'index' %}" title="Visit the main page"><img src="{% static "mainapp/anarchypedia.png" %}" height="175" width="155"/></a>
+        </div>
+        <div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+            <h3 id="p-navigation-label">Navigation</h3>
+            <div class="body">
+                <ul>
+                    <li id="n-mainpage-description"><a href="" title="Visit the main page [alt-shift-z]"
+                                                       accesskey="z">Main page</a></li>
+                    <li id="n-contents"><a href=""
+                                           title="Guides to browsing Wikipedia">Contribute to AP</a></li>
+                    <li id="n-randompage"><a href="" title="Load a random article [alt-shift-x]"
+                                             accesskey="x">Random Anarchy</a></li>
+                    <li id="n-sitesupport"><a
+                            href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en"
+                            title="Support us">Donate to Anarchypedia</a></li>
+                    <li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Buy our Merch, Bro</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+            <h3 id="p-interaction-label">Interanarchy</h3>
+            <div class="body">
+                <ul>
+                    <li id="n-help"><a href=""
+                                       title="Guidance on how to use and edit Wikipedia">Help</a></li>
+                    <li id="n-aboutsite"><a href="" title="Find out about Wikipedia">About
+                        Anarchypedia</a></li>
+                    <li id="n-portal"><a href=""
+                                         title="About the project, what you can do, where to find things">Community?</a></li>
+                    <li id="n-recentchanges"><a href=""
+                                                title="A list of recent changes in the wiki [alt-shift-r]"
+                                                accesskey="r">Recent Changes</a></li>
+                    <li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us"
+                                              title="How to contact Wikipedia">Don't Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+            <h3 id="p-tb-label">Tools</h3>
+            <div class="body">
+                <ul>
+                    <li id="t-whatlinkshere"><a href=""
+                                                title="List of all English Wikipedia pages containing links to this page [alt-shift-j]"
+                                                accesskey="j">What links here</a></li>
+                    <li id="t-recentchangeslinked"><a href=""
+                                                      rel="nofollow"
+                                                      title="Recent changes in pages linked from this page [alt-shift-k]"
+                                                      accesskey="k">Related changes</a></li>
+                    <li id="t-upload"><a href="" title="Upload files [alt-shift-u]"
+                                         accesskey="u">Upload file</a></li>
+                    <li id="t-specialpages"><a href=""
+                                               title="A list of all special pages [alt-shift-q]" accesskey="q">Special
+                        pages</a></li>
+                    <li id="t-permalink"><a href=""
+                                            title="Permanent link to this revision of the page">Permanent link</a></li>
+                    <li id="t-info"><a href=""
+                                       title="More information about this page">Page information</a></li>
+                    <li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5144983"
+                                           title="Link to connected data repository item [alt-shift-g]" accesskey="g">Wikidata
+                        item</a></li>
+                    <li id="t-cite"><a
+                            href=""
+                            title="Information on how to cite this page">Cite this page</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+            <h3 id="p-coll-print_export-label">Print/export</h3>
+            <div class="body">
+                <ul>
+                    <li id="coll-create_a_book"><a
+                            href="">Create
+                        a book</a></li>
+                    <li id="coll-download-as-rdf2latex"><a
+                            href="">Download
+                        as PDF</a></li>
+                    <li id="t-print"><a href=""
+                                        title="Printable version of this page [alt-shift-p]" accesskey="p">Printable
+                        version</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portal" role="navigation" id="p-wikibase-otherprojects"
+             aria-labelledby="p-wikibase-otherprojects-label">
+            <h3 id="p-wikibase-otherprojects-label">In other projects</h3>
+            <div class="body">
+                <ul>
+                    <li class="wb-otherproject-link wb-otherproject-wikiquote"><a
+                            href="" hreflang="en">Wikiquote</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+            <button class="uls-settings-trigger" title="Language settings"></button>
+    </div>
+</div>
+    </div>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+    mw.config.set({
+        "wgPageParseReport": {
+            "limitreport": {
+                "cputime": "0.224",
+                "walltime": "0.292",
+                "ppvisitednodes": {"value": 1891, "limit": 1000000},
+                "ppgeneratednodes": {"value": 0, "limit": 1500000},
+                "postexpandincludesize": {"value": 25080, "limit": 2097152},
+                "templateargumentsize": {"value": 2822, "limit": 2097152},
+                "expansiondepth": {"value": 18, "limit": 40},
+                "expensivefunctioncount": {"value": 0, "limit": 500},
+                "unstrip-depth": {"value": 0, "limit": 20},
+                "unstrip-size": {"value": 2491, "limit": 5000000},
+                "entityaccesscount": {"value": 1, "limit": 400},
+                "timingprofile": ["100.00%  265.909      1 -total", " 43.00%  114.329      1 Template:Infobox_scientist", " 39.33%  104.585      1 Template:Infobox_person", " 32.04%   85.195      2 Template:Infobox", " 16.39%   43.572      4 Template:Cite_book", " 15.45%   41.071      1 Template:Authority_control", "  9.38%   24.954      5 Template:Br_separated_entries", "  8.36%   22.237      1 Template:Reflist", "  5.95%   15.815      1 Template:UK-scientist-stub", "  5.75%   15.292      1 Template:Wikiquote"]
+            },
+            "scribunto": {
+                "limitreport-timeusage": {"value": "0.106", "limit": "10.000"},
+                "limitreport-memusage": {"value": 3186760, "limit": 52428800}
+            },
+            "cachereport": {"origin": "mw1274", "timestamp": "20180404155553", "ttl": 86400, "transientcontent": true}
+        }
+    });
+});</script>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+    mw.config.set({"wgBackendResponseTime": 91, "wgHostname": "mw1331"});
+});</script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -45,5 +308,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+
 </body>
 </html>
