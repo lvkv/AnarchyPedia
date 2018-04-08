@@ -1,5 +1,5 @@
 # AnarchyPedia
-BitCamp 2018 Hackathon Submission
+Bitcamp 2018 Hackathon Submission
 
 ## Inspiration
 Everyone has, at some point, tried and failed to edit a Wikipedia article. There's a reason not just anyone can make changes - or else _anarchy_ would ensue, right? Well... _hmmm_ ....
